@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+Student Registration | JOVATECH COMPUTER TECHNOLOGIES
+{% endblock %}
+{% block content %}
+<section class="registration reveal">
+    <h2>Student Registration Form</h2>
+    <p>
+        Complete the form below to apply for admission into JOVATECH COMPUTER TECHNOLOGIES.
+    </p>
+
+    {% if success %}
+    <div class="success-message">{( success)}</div>
+    {% endif %}
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit Registration</button>
+    </form>
+</section>
+{% endblock %}

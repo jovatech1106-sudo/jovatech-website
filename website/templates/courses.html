@@ -1,0 +1,277 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Courses | JOVATECH COMPUTER TECHNOLOGIES
+{% endblock %}
+{% block content %}
+<!-- Courses Hero Section -->
+<section class="courses-hero">
+    <div class="container">
+        <h1>Our Professional Courses</h1>
+        <p>
+            Empowering individuals with practical technology skills for career
+            growth, entrepreneurship and professional excellence.
+        </p>
+    </div>
+</section>
+<!-- Courses Section -->
+<section class="courses-section reveal">
+    <div class="container">
+        <h2 class="section-title">
+            Technology Training Programs
+        </h2>
+        <!-- Laptop Engineering -->
+        <div class="course-card">
+            <h3>Laptop Engineering</h3>
+            <p>
+                Become a professional laptop engineer with practical knowledge
+                of laptop hardware repair, motherboard troubleshooting and
+                advanced fault diagnosis.
+            </p>
+            <h4>Course Content:</h4>
+            <ul>
+                <li>Laptop Components Identification</li>
+                <li>DC Power Circuit Analysis</li>
+                <li>Charging Circuit Troubleshooting</li>
+                <li>Motherboard Fault Diagnosis</li>
+                <li>Short Circuit Detection</li>
+                <li>BIOS Repair and Programming</li>
+                <li>Practical Laptop Repairs</li>
+            </ul>
+            <a href="/register/" class="btn">
+                Enroll Now
+            </a>
+        </div>
+        <!-- Smartphone Engineering -->
+        <div class="course-card">
+            <h3>Smartphone Engineering</h3>
+            <p>
+                Master smartphone hardware engineering from basic electronics
+                to advanced motherboard repair techniques.
+            </p>
+            <h4>Course Content:</h4>
+            <ul>
+                <li>Basic Electronics</li>
+                <li>Smartphone Components Testing</li>
+                <li>Power Line Analysis</li>
+                <li>Short Circuit Detection</li>
+                <li>Charging Fault Repair</li>
+                <li>IC Diagnosis</li>
+                <li>Firmware Installation and Repair</li>
+            </ul>
+            <a href="/register/" class="btn">
+                Enroll Now
+            </a>
+        </div>
+        <!-- Python Programming -->
+        <div class="course-card">
+            <h3>Python Programming</h3>
+            <p>
+                Learn Python programming from beginner level to building
+                professional software applications.
+            </p>
+            <h4>Course Content:</h4>
+            <ul>
+                <li>Python Fundamentals</li>
+                <li>Variables and Data Types</li>
+                <li>Functions and Modules</li>
+                <li>Object-Oriented Programming</li>
+                <li>File Handling</li>
+                <li>Database Programming</li>
+                <li>Real-Life Python Projects</li>
+            </ul>
+            <a href="/register/" class="btn">
+                Enroll Now
+            </a>
+        </div>
+        <!-- JavaScript and Web Development -->
+        <div class="course-card">
+            <h3>JavaScript & Web Development</h3>
+            <p>
+                Build modern, responsive and interactive websites using
+                industry-standard web technologies.
+            </p>
+            <h4>Course Content:</h4>
+            <ul>
+                <li>HTML5 Web Structure</li>
+                <li>CSS3 Styling</li>
+                <li>JavaScript Programming</li>
+                <li>Responsive Website Design</li>
+                <li>Frontend Development</li>
+                <li>Website Deployment</li>
+                <li>Real Website Projects</li>
+            </ul>
+            <a href="/register/" class="btn">
+                Enroll Now
+            </a>
+        </div>
+        <!-- IT System Administration -->
+        <div class="course-card">
+            <h3>IT System Administration</h3>
+            <p>
+                Develop professional skills in managing computer systems,
+                networks and organizational IT infrastructure.
+            </p>
+            <h4>Course Content:</h4>
+            <ul>
+                <li>Operating System Management</li>
+                <li>Windows Administration</li>
+                <li>Linux Administration</li>
+                <li>Computer Networking</li>
+                <li>User Account Management</li>
+                <li>System Security</li>
+                <li>IT Support and Troubleshooting</li>
+            </ul>
+            <a href="/register/" class="btn">
+                Enroll Now
+            </a>
+        </div>
+    </div>
+</section>
+ <!-- CSS Styling -->
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+/* Hero */
+.courses-hero {
+    background: linear-gradient(
+        to right,
+        #0d47a1,
+        #00897b
+    );
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+.courses-hero h1 {
+    font-size:45px;
+    margin-bottom:20px;
+}
+.courses-hero p {
+    font-size:18px;
+}
+/* Main Section */
+.courses-section {
+    padding:60px 20px;
+    background:#f5f5f5;
+}
+.container {
+    max-width:1100px;
+    margin:auto;
+}
+.section-title {
+    text-align:center;
+    color:#0d47a1;
+    font-size:35px;
+    margin-bottom:40px;
+}
+/* Course Cards */
+.course-card {
+    background:white;
+    padding:35px;
+    margin-bottom:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+.course-card h3 {
+    color:#00897b;
+    font-size:28px;
+}
+.course-card h4 {
+    color:#0d47a1;
+}
+.course-card ul {
+    line-height:1.8;
+}
+.course-card li {
+    margin-bottom:8px;
+}
+/* Button */
+.btn {
+    display:inline-block;
+    margin-top:20px;
+    background:#0d47a1;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.btn:hover {
+    background:#00897b;
+}
+</style>
+
+<style>
+/* Courses Section */
+.courses-section {
+    padding:60px 20px;
+    background:#f5f5f5;
+}
+.container {
+    max-width:1200px;
+    margin:auto;
+}
+.section-title {
+    text-align:center;
+    color:#0d47a1;
+    font-size:35px;
+    margin-bottom:40px;
+}
+/* GRID LAYOUT */
+.courses-section .container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+}
+/* Course Cards */
+.course-card {
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.course-card:hover {
+    transform:translateY(-10px);
+}
+.course-card h3 {
+    color:#00897b;
+    font-size:25px;
+}
+.course-card h4 {
+    color:#0d47a1;
+}
+.course-card ul {
+    padding-left:20px;
+    line-height:1.7;
+}
+/* Button */
+.btn {
+    display:inline-block;
+    margin-top:20px;
+    background:#0d47a1;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+}
+.btn:hover {
+    background:#00897b;
+}
+/* Tablet View */
+@media(max-width:900px){
+    .courses-section .container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+/* Mobile View */
+@media(max-width:600px){
+    .courses-section .container{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+
+{% endblock %}
